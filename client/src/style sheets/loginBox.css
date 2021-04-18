@@ -1,0 +1,53 @@
+/*Login/register*/
+.loginBox{
+    background-color: #EFF2EF;
+    min-width: 240px;
+    max-width: 480px;
+    min-height: 432px;
+    max-height: 643px;
+    height: 80%;
+    border-style: solid;
+    border-color: #564D4A;
+    border-top-width: 45px;
+    border-bottom-width: 45px;
+    border-left-width: 0px;
+    border-right-width: 0px; 
+    border-radius: 35px;
+    margin:auto;
+    margin-top: 5%;
+  }
+
+  .imageText{
+    margin-top: -15%;
+    background-color: #EFF2EF;
+    border-radius: 15px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .logoPicture{
+        display: none;
+      }
+      .imageText{
+        margin-top: 0%;
+      }
+  }
+
+  @media only screen and (max-width: 355px) {
+    .cheeseLink{
+        font-size: 14px !important;
+      }
+  }
+
+  @media only screen and (max-height: 720px) {
+    .logoPicture{
+        display: none;
+      }
+      .imageText{
+        margin-top: 0%;
+      }
+  }
+  @media only screen and (max-height: 620px) {
+    .hiddenTitle {
+        display: none;
+    }
+  }

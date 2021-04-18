@@ -1,0 +1,102 @@
+
+.navbarList {
+    color: #EFF2EF;
+    text-decoration: none;
+    height: 100%;
+}
+.navbarList ul{
+    list-style: none;
+    height: 100%;
+  }
+  
+.navbarList li{
+    list-style: none;
+    height: 100%;
+    margin: 10px;
+}
+
+.logo {
+    max-height: 72px;
+}
+
+.navbarBar {
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #564D4A;
+    width: 100%;
+    margin-bottom: 20px;
+    position:fixed;
+    height: 72px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.spacer{
+    flex: 1;
+}
+
+.navbarIconActive{
+    color: #F8B530;
+    text-decoration: none;
+    background-color: #443D3A;
+    padding-bottom: 20px;
+    height: 100%;
+}
+
+.navbarIcon:hover{
+    /* Slightly different yellow tone to comply with WCAG in full version colours should be more unified.*/
+    color: #F8B530;
+}
+
+.navbarIcon{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 38px;
+    color: #EFF2EF;
+    text-align: center;
+    width: 100px;
+    height: 100%;
+    text-decoration: none;
+}
+  
+.logoText {
+    padding-left: "1rem"
+}
+
+
+@media only screen and (max-width: 1065px) {
+    .navbarIconActive{
+    padding-bottom: 0px;
+    }
+}
+
+
+@media only screen and (max-width: 950px) {
+    .logoText {
+        font-size: 28px;
+    }
+    .logo {
+        max-width: 50px;
+    }
+
+}
+
+@media only screen and (max-width: 650px) {
+    .navbarIcon{
+        font-size: 22px;
+        width: 60px;
+    }
+
+    .logoText {
+        display:none;
+    }
+
+    .navbarList li{
+        margin: 0px;
+    }
+
+}
+

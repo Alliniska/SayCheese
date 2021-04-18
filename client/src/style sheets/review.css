@@ -1,0 +1,17 @@
+.ratingIcon{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 72px;
+    color: #443D3A;
+    text-align: center;
+    width: 100px;
+    height: 100%;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 200ms;
+  }
+  
+  input[name="rating"] {
+    display: none;
+  }

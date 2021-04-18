@@ -1,0 +1,565 @@
+
+h2 {
+  margin-left: 1px;
+  margin-right: 15px;
+  font-family: verdana;
+  font-size: 24px;
+  color: #564D4A;
+}
+
+h3 {
+  margin-left: 1px;
+  margin-right: 15px;
+  font-family: verdana;
+  font-size: 20px;
+  color: #564D4A;
+}
+  
+  p {
+    font-family: verdana;
+    font-size: 20px;
+    color: #564D4A;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 0px;
+  }
+
+.flexboxHorizontalS{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.fakeButton {
+  background: none!important;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0!important;
+}
+
+.icon {
+  font-size: 38px;
+  color: #564D4A;
+  text-align: center;
+}
+
+.noTop{
+  margin-top: 0;
+}
+
+.noUnderline{
+  text-decoration: 'none';
+}
+
+/*Navbar CSS*/
+.navbarList {
+  color: #EFF2EF;
+  text-decoration: none;
+  height: 100%;
+}
+
+.navbarIcon{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  font-size: 38px;
+  color: #EFF2EF;
+  text-align: center;
+  width: 100px;
+  height: 100%;
+  text-decoration: none;
+}
+
+.navbarList ul{
+  list-style: none;
+  height: 100%;
+}
+
+.navbarList li{
+  list-style: none;
+  height: 100%;
+}
+
+.navbarIcon:hover{
+  /* Slightly different yellow tone to comply with WCAG in full version colours should be more unified.*/
+  color: #F8B530;
+}
+
+.navbarIconActive{
+  color: #F8B530;
+  text-decoration: none;
+  background-color: #443D3A;
+  padding-bottom: 20px;
+  height: 100%;
+}
+
+.spacer{
+  flex: 1;
+}
+
+/*Star rating css*/
+.ratingIcon{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  font-size: 72px;
+  color: #443D3A;
+  text-align: center;
+  width: 100px;
+  height: 100%;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 200ms;
+}
+
+input[name="rating"] {
+  display: none;
+}
+
+/*Table styling*/
+#cheeses {
+  font-family: Verdana;
+  border-collapse: collapse;
+}
+
+#cheeses td, #cheeses th {
+  text-align: center;
+  border: 2px solid #443D3A;
+  padding: 0px;
+}
+
+#cheeses tr:nth-child(even){background-color: #EFF2EF;}
+
+#cheeses tr:hover {background-color: #ddd;}
+
+#cheeses th {
+  background-color: #E79D08;
+  color: white;
+  height: 35px;
+}
+
+#cheeses td {
+  cursor: pointer;
+  color: #443D3A;
+  height: 365px;
+  max-height: 365px;
+}
+
+#cheeses h1 {
+  color: #443D3A;
+}
+
+#cheeses p {
+  color: #443D3A;
+}
+
+.ratingAverage {
+  font-size: 64px;
+  color: #E79D08;
+  text-align: center;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: color 200ms;
+}
+
+.tablePrice{
+  font-size: 36px;
+}
+
+.tableND {
+  max-width: 485px;
+  align-items:"flex-start";
+  text-align:"left";
+  overflow-y: hidden;
+}
+
+.NDItem {
+  margin-left: auto;
+  margin-right: auto;
+  flex: 0 1 200px;
+}
+
+#cheeses p {
+  font-style:italic;
+}
+
+/*Tags*/
+.tagDecor {
+  background-color: #E79D08;
+  border-radius: 10px;
+  color: #EFF2EF !important;
+  font-size: 20px;
+  font-family: Verdana;
+  margin: 5px;
+  font-style: normal !important;
+  font-weight: bold;
+  padding: 5px;
+}
+/*ViewTable*/
+#view {
+  border: 0;
+  font-family: Verdana;
+  border-collapse: collapse;
+  color: #564D4A;
+}
+/*This  block deals with input sldiers, taken from: https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/*/
+/*Hiding the input bar*/
+input[type=range] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 100%; /* Specific width is required for Firefox. */
+  background: transparent; /* Otherwise white in Chrome */
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+
+  /* Hides the slider so custom styles can be added */
+  background: transparent; 
+  border-color: transparent;
+  color: transparent;
+}
+
+/*Styling the input bar*/
+/*The slider circle*/
+/*Chromeium*/
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 28px;
+  width: 28px;
+  border: 1px;
+  background: #453D3B;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -14px;
+}
+
+/* Firefox */
+input[type=range]::-moz-range-thumb {
+  height: 28px;
+  width: 28px;
+  border: 1px;
+  border-radius: 50%;
+  background: #453D3B;
+  cursor: pointer;
+}
+
+/* IE */
+input[type=range]::-ms-thumb {
+  height: 28px;
+  width: 28px;
+  border: 1px;
+  border-radius: 50%;
+  background: #453D3B;
+  cursor: pointer;
+}
+/*Track styling*/
+/*Chrome*/
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8px;
+  cursor: pointer;
+  background: #453D3B;
+  border-radius: 2px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #453D3B;
+}
+
+/*Firefox*/
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 8px;
+  cursor: pointer;
+  background: #453D3B;
+  border-radius: 2px;
+}
+
+/*IE*/
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #453D3B;
+  border-radius: 2px;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #453D3B;
+}
+input[type=range]::-ms-fill-upper {
+  background: #453D3B;
+  border-radius: 2px;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #453D3B;
+}
+
+/*gallery*/
+/* Position the image container (needed to position the left and right arrows) */
+.gallery {
+  position: relative;
+  height: 610px;
+  width: 825px;
+  max-height: 610px;
+  max-width: 825px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.galleryR {
+  position: relative;
+  height: 200px;
+  width: 400px;
+  max-height: 200px;
+  max-width: 400px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  border: 4px solid #453D3B;
+  margin-bottom: 5px;
+}
+
+.sliderImage {
+  background-color: transparent;
+  width: 825px;
+  height: 610px;
+  object-fit: scale-down;
+}
+.prev {
+  background-color: transparent;
+  position: absolute;
+  height: 33px;
+  width: 30px;
+  background-image: url("Images/ButtonLeftPoint.png");
+  background-size: cover; 
+  border: none;
+  top: 50%;
+  left: 5px;
+  cursor: pointer;
+}
+.next {
+  cursor: pointer;
+  background-color: transparent;
+  position: absolute;
+  height: 33px;
+  width: 30px;
+  background-image: url("Images/Button.png");
+  background-size: cover; 
+  border: none;
+  top: 50%;
+  right: 5px;
+}
+
+.textInput {
+  height: 290px;
+  max-height: 500px;
+  width: 500px;
+  max-width: 500px;
+  display: inline;
+  font-family: Verdana;
+  width: auto;
+  resize: none;
+  border: 2px solid #443D3A;
+  border-radius: 4px;
+}
+.slideR {
+  border: 2px;
+  border-color: #443D3A;
+}
+
+/* Input forms for update and create*/
+ input[type=text], input[type=Email], input[type=Password], input[type=number], input[type=checkbox]{
+   border: 2px solid #443D3A;
+   border-radius: 4px;
+ }
+
+ input[type=number] {
+   width: 50px;
+ }
+
+ /* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/*Screen specific styles*/
+@media only screen and (max-width: 1350px){
+  .navbarIconActive{
+    padding-bottom: 0px;
+  }}
+
+@media only screen and (max-width: 1300px){
+  .slider {
+    display: none;
+  }
+  .gallery {
+    height:305px;
+    width: 425px;
+  }
+  .sliderImage {
+    height:305px;
+    width: 425px;
+  }
+  #view .scrollbox {
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+}
+
+@media only screen and (max-width: 1110px){
+  .logoText{
+    font-size: 30px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  .slider {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 930px){
+  
+  .flexboxHorizontal[name="viewBox"]{
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    height: 100%;
+  }
+
+  .flexboxHorizontal[name="formBox"]{
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    height: 100%;
+  }
+
+  #view .flexboxVertical{
+    justify-content: center;
+    width: 100%;
+  }
+  .gallery {
+    width: 100%;
+  }
+  .sliderImage {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  
+  body, html {
+    /*Hide scrollbar foor IE, Edge and Firefox*/
+    -ms-overflow-style: auto;  /* IE and Edge */
+    scrollbar-width: auto;  /* Firefox */
+  }
+  .titlePicture{
+    display: none;
+  }
+  .pictureTitle{
+    color:#564D4A;
+    margin: 0.1rem;
+  }
+  .exploreItem{
+    height: 110px;
+  }
+  
+}
+
+@media only screen and (max-width: 600px) {
+
+  .text {
+    font-size: 28px;
+  }
+  .title {
+    margin-top: 10%;
+  }
+  .defaultButton{
+    margin-bottom: 10%;
+  }
+  .loginBox{
+    margin-top: 0;
+  }
+  body, html {
+    /*Hide scrollbar foor IE, Edge and Firefox*/
+    -ms-overflow-style: auto;  /* IE and Edge */
+    scrollbar-width: auto;  /* Firefox */
+  }
+  .logoText{
+    display: none;
+  }
+  .logo{
+    height: 35px;
+    margin: 10px;
+    padding: 0px;
+  }
+  .navbarIcon{
+    width: 70px;
+  }
+  .defaultButtonAlt{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .ratingAverage {
+    font-size: 36px;
+    color: #E79D08;
+    text-align: center;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: color 200ms;
+  }
+  .tablePrice{
+    font-size: 24px;
+  }
+  .slider {
+    display: none;
+  }
+
+  #cheeses p {
+    font-size: 16px !important;
+  }
+
+  #cheeses h2 {
+    font-size: 18px !important;
+  }
+
+  #cheeses h1 {
+    font-size: 24px !important;
+  }
+  .searchBar {
+    width:100px;
+    left: 0px;
+  }
+}
